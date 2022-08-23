@@ -12,12 +12,41 @@ namespace ShopOrganizer
 {
     public partial class LoadingScreen : Form
     {
+        private int loadingBarValue;
         public LoadingScreen()
         {
             InitializeComponent();
         }
 
+        private void StartTime()
+        {
+
+        }
+
         private void LoadingScreen_Load(object sender, EventArgs e)
+        {
+            loadingBarTimer.Start();
+        }
+        private void loadingBarTimer_Tick(object sender, EventArgs e)
+        {
+
+            loadingBarValue += 5;
+
+            statusPercent.Text = loadingBarValue.ToString() +"%";
+            loadingProgressBar.Value = loadingBarValue;
+
+            if(loadingBarValue >= loadingProgressBar.Maximum)
+            {
+                loadingBarTimer.Stop();
+            }
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusPercent_Click(object sender, EventArgs e)
         {
 
         }
