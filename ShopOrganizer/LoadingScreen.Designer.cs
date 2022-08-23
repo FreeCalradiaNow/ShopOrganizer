@@ -29,32 +29,34 @@ namespace ShopOrganizer
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadingScreen));
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.loadingProgressBar = new System.Windows.Forms.ProgressBar();
             this.loading = new System.Windows.Forms.Label();
             this.statusPercent = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.loadingBarTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // progressBar1
+            // loadingProgressBar
             // 
-            this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.progressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.progressBar1.Location = new System.Drawing.Point(-2, 176);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.progressBar1.RightToLeftLayout = true;
-            this.progressBar1.Size = new System.Drawing.Size(690, 37);
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar1.TabIndex = 0;
-            this.progressBar1.Value = 50;
+            this.loadingProgressBar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.loadingProgressBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.loadingProgressBar.Location = new System.Drawing.Point(-2, 166);
+            this.loadingProgressBar.Name = "loadingProgressBar";
+            this.loadingProgressBar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.loadingProgressBar.Size = new System.Drawing.Size(690, 20);
+            this.loadingProgressBar.Step = 5;
+            this.loadingProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.loadingProgressBar.TabIndex = 0;
+            this.loadingProgressBar.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // loading
             // 
             this.loading.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.loading.AutoSize = true;
-            this.loading.Location = new System.Drawing.Point(320, 160);
+            this.loading.Location = new System.Drawing.Point(332, 189);
             this.loading.Name = "loading";
             this.loading.Size = new System.Drawing.Size(41, 13);
             this.loading.TabIndex = 1;
@@ -64,11 +66,12 @@ namespace ShopOrganizer
             // 
             this.statusPercent.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.statusPercent.AutoSize = true;
-            this.statusPercent.Location = new System.Drawing.Point(367, 160);
+            this.statusPercent.Location = new System.Drawing.Point(311, 189);
             this.statusPercent.Name = "statusPercent";
             this.statusPercent.Size = new System.Drawing.Size(24, 13);
             this.statusPercent.TabIndex = 2;
             this.statusPercent.Text = "0 %";
+            this.statusPercent.Click += new System.EventHandler(this.statusPercent_Click);
             // 
             // pictureBox1
             // 
@@ -86,6 +89,10 @@ namespace ShopOrganizer
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // loadingBarTimer
+            // 
+            this.loadingBarTimer.Tick += new System.EventHandler(this.loadingBarTimer_Tick);
+            // 
             // LoadingScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -93,7 +100,7 @@ namespace ShopOrganizer
             this.ClientSize = new System.Drawing.Size(684, 211);
             this.Controls.Add(this.statusPercent);
             this.Controls.Add(this.loading);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.loadingProgressBar);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -109,10 +116,11 @@ namespace ShopOrganizer
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar loadingProgressBar;
         private System.Windows.Forms.Label loading;
         private System.Windows.Forms.Label statusPercent;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer loadingBarTimer;
     }
 }
 
