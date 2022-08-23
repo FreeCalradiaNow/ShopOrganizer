@@ -16,5 +16,10 @@ namespace ShopOrganizer
         {
             InitializeComponent();
         }
+
+        private void LoadingScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
