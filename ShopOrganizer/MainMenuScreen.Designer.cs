@@ -45,6 +45,7 @@ namespace ShopOrganizer
             this.btnProducts.TabIndex = 0;
             this.btnProducts.Text = "Produkte verwalten";
             this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // btnBill
             // 
@@ -57,6 +58,7 @@ namespace ShopOrganizer
             this.btnBill.TabIndex = 1;
             this.btnBill.Text = "Rechnung erstellen";
             this.btnBill.UseVisualStyleBackColor = true;
+            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // MainMenuScreen
             // 
