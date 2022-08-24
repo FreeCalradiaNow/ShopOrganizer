@@ -16,5 +16,18 @@ namespace ShopOrganizer
         {
             InitializeComponent();
         }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            ProductsScreen productsScreen = new ProductsScreen();
+            productsScreen.Show();
+
+            this.Hide();
+        }
+
+        private void btnBill_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
