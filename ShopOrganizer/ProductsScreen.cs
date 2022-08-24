@@ -16,5 +16,15 @@ namespace ShopOrganizer
         {
             InitializeComponent();
         }
+
+        private void ProductsScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

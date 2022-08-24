@@ -56,6 +56,7 @@ namespace ShopOrganizer
             // 
             this.loading.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.loading.AutoSize = true;
+            this.loading.ForeColor = System.Drawing.Color.DarkRed;
             this.loading.Location = new System.Drawing.Point(332, 189);
             this.loading.Name = "loading";
             this.loading.Size = new System.Drawing.Size(41, 13);
@@ -66,6 +67,7 @@ namespace ShopOrganizer
             // 
             this.statusPercent.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.statusPercent.AutoSize = true;
+            this.statusPercent.ForeColor = System.Drawing.Color.DarkRed;
             this.statusPercent.Location = new System.Drawing.Point(302, 189);
             this.statusPercent.Name = "statusPercent";
             this.statusPercent.Size = new System.Drawing.Size(24, 13);
@@ -97,11 +99,14 @@ namespace ShopOrganizer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(684, 211);
+            this.ControlBox = false;
             this.Controls.Add(this.statusPercent);
             this.Controls.Add(this.loading);
             this.Controls.Add(this.loadingProgressBar);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoadingScreen";

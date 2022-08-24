@@ -65,11 +65,14 @@ namespace ShopOrganizer
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(620, 165);
+            this.ClientSize = new System.Drawing.Size(620, 166);
             this.Controls.Add(this.btnBill);
             this.Controls.Add(this.btnProducts);
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "MainMenuScreen";
-            this.Text = "MainMenuScreen";
+            this.Text = "Menu";
             this.ResumeLayout(false);
 
         }
