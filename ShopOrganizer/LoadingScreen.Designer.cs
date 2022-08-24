@@ -66,7 +66,7 @@ namespace ShopOrganizer
             // 
             this.statusPercent.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.statusPercent.AutoSize = true;
-            this.statusPercent.Location = new System.Drawing.Point(311, 189);
+            this.statusPercent.Location = new System.Drawing.Point(302, 189);
             this.statusPercent.Name = "statusPercent";
             this.statusPercent.Size = new System.Drawing.Size(24, 13);
             this.statusPercent.TabIndex = 2;
