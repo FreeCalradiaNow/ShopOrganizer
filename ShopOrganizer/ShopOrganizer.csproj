@@ -58,6 +58,12 @@
     <Compile Include="MainMenuScreen.Designer.cs">
       <DependentUpon>MainMenuScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsScreen.Designer.cs">
+      <DependentUpon>ProductsScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="LoadingScreen.resx">
