@@ -203,6 +203,7 @@ namespace ShopOrganizer
             this.btnProductSave.TabIndex = 13;
             this.btnProductSave.Text = "save";
             this.btnProductSave.UseVisualStyleBackColor = true;
+            this.btnProductSave.Click += new System.EventHandler(this.btnProductSave_Click);
             // 
             // btnProductEdit
             // 
@@ -214,6 +215,7 @@ namespace ShopOrganizer
             this.btnProductEdit.TabIndex = 14;
             this.btnProductEdit.Text = "edit";
             this.btnProductEdit.UseVisualStyleBackColor = true;
+            this.btnProductEdit.Click += new System.EventHandler(this.btnProductEdit_Click);
             // 
             // btnProductClear
             // 
@@ -225,6 +227,7 @@ namespace ShopOrganizer
             this.btnProductClear.TabIndex = 15;
             this.btnProductClear.Text = "clear";
             this.btnProductClear.UseVisualStyleBackColor = true;
+            this.btnProductClear.Click += new System.EventHandler(this.btnProductClear_Click);
             // 
             // btnProductDelete
             // 
@@ -236,6 +239,7 @@ namespace ShopOrganizer
             this.btnProductDelete.TabIndex = 16;
             this.btnProductDelete.Text = "delete";
             this.btnProductDelete.UseVisualStyleBackColor = true;
+            this.btnProductDelete.Click += new System.EventHandler(this.btnProductDelete_Click);
             // 
             // dataGridView1
             // 
