@@ -34,9 +34,7 @@ namespace ShopOrganizer
             this.textBoxProductName = new System.Windows.Forms.TextBox();
             this.textBoxProductArticle = new System.Windows.Forms.TextBox();
             this.textBoxProductBrand = new System.Windows.Forms.TextBox();
-            this.textBoxProductBBD = new System.Windows.Forms.TextBox();
             this.lblProductPrice = new System.Windows.Forms.Label();
-            this.lblProductBBD = new System.Windows.Forms.Label();
             this.lblProductArticle = new System.Windows.Forms.Label();
             this.lblProductBrand = new System.Windows.Forms.Label();
             this.lblProductCategory = new System.Windows.Forms.Label();
@@ -92,39 +90,17 @@ namespace ShopOrganizer
             this.textBoxProductBrand.Size = new System.Drawing.Size(237, 20);
             this.textBoxProductBrand.TabIndex = 3;
             // 
-            // textBoxProductBBD
-            // 
-            this.textBoxProductBBD.BackColor = System.Drawing.Color.Black;
-            this.textBoxProductBBD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxProductBBD.ForeColor = System.Drawing.Color.White;
-            this.textBoxProductBBD.Location = new System.Drawing.Point(142, 129);
-            this.textBoxProductBBD.Name = "textBoxProductBBD";
-            this.textBoxProductBBD.Size = new System.Drawing.Size(156, 20);
-            this.textBoxProductBBD.TabIndex = 4;
-            // 
             // lblProductPrice
             // 
             this.lblProductPrice.AutoSize = true;
             this.lblProductPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblProductPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProductPrice.ForeColor = System.Drawing.Color.White;
-            this.lblProductPrice.Location = new System.Drawing.Point(53, 155);
+            this.lblProductPrice.Location = new System.Drawing.Point(53, 131);
             this.lblProductPrice.Name = "lblProductPrice";
             this.lblProductPrice.Size = new System.Drawing.Size(61, 13);
             this.lblProductPrice.TabIndex = 6;
             this.lblProductPrice.Text = "Price in $";
-            // 
-            // lblProductBBD
-            // 
-            this.lblProductBBD.AutoSize = true;
-            this.lblProductBBD.BackColor = System.Drawing.Color.Transparent;
-            this.lblProductBBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductBBD.ForeColor = System.Drawing.Color.White;
-            this.lblProductBBD.Location = new System.Drawing.Point(53, 129);
-            this.lblProductBBD.Name = "lblProductBBD";
-            this.lblProductBBD.Size = new System.Drawing.Size(32, 13);
-            this.lblProductBBD.TabIndex = 7;
-            this.lblProductBBD.Text = "BBD";
             // 
             // lblProductArticle
             // 
@@ -167,7 +143,7 @@ namespace ShopOrganizer
             this.textBoxProductPrice.BackColor = System.Drawing.Color.Black;
             this.textBoxProductPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxProductPrice.ForeColor = System.Drawing.Color.White;
-            this.textBoxProductPrice.Location = new System.Drawing.Point(142, 155);
+            this.textBoxProductPrice.Location = new System.Drawing.Point(142, 129);
             this.textBoxProductPrice.Name = "textBoxProductPrice";
             this.textBoxProductPrice.Size = new System.Drawing.Size(75, 20);
             this.textBoxProductPrice.TabIndex = 11;
@@ -181,13 +157,13 @@ namespace ShopOrganizer
             this.comboBoxProductCategory.FormattingEnabled = true;
             this.comboBoxProductCategory.Items.AddRange(new object[] {
             "",
-            "fruits",
-            "vegetables",
-            "meat",
-            "fish",
-            "drugstore items",
-            "beverages",
-            "non-food non-drug"});
+            "fruits (1)",
+            "vegetables (2)",
+            "meat (3)",
+            "fish (4)",
+            "drugstore items (5)",
+            "beverages (6)",
+            "non-food non-drug (0)"});
             this.comboBoxProductCategory.Location = new System.Drawing.Point(142, 74);
             this.comboBoxProductCategory.Name = "comboBoxProductCategory";
             this.comboBoxProductCategory.Size = new System.Drawing.Size(156, 21);
@@ -267,9 +243,7 @@ namespace ShopOrganizer
             this.Controls.Add(this.lblProductCategory);
             this.Controls.Add(this.lblProductBrand);
             this.Controls.Add(this.lblProductArticle);
-            this.Controls.Add(this.lblProductBBD);
             this.Controls.Add(this.lblProductPrice);
-            this.Controls.Add(this.textBoxProductBBD);
             this.Controls.Add(this.textBoxProductBrand);
             this.Controls.Add(this.textBoxProductArticle);
             this.Controls.Add(this.textBoxProductName);
@@ -292,9 +266,7 @@ namespace ShopOrganizer
         private System.Windows.Forms.TextBox textBoxProductName;
         private System.Windows.Forms.TextBox textBoxProductArticle;
         private System.Windows.Forms.TextBox textBoxProductBrand;
-        private System.Windows.Forms.TextBox textBoxProductBBD;
         private System.Windows.Forms.Label lblProductPrice;
-        private System.Windows.Forms.Label lblProductBBD;
         private System.Windows.Forms.Label lblProductArticle;
         private System.Windows.Forms.Label lblProductBrand;
         private System.Windows.Forms.Label lblProductCategory;
